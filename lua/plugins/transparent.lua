@@ -7,6 +7,17 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
+      flavour = "mocha", -- matches WezTerm's 'Catppuccin Mocha' color scheme
+      -- Italic styling like the Catppuccin screenshots
+      styles = {
+        comments = { "italic" },
+        conditionals = { "italic" },
+        keywords = { "italic" },
+        functions = { "italic" },
+        booleans = { "italic" },
+        parameters = { "italic" },
+        types = { "italic" },
+      },
       transparent_background = true, -- Normal, NormalNC, sidebars (neo-tree), statusline, etc.
       float = { transparent = true, solid = false }, -- floating windows / which-key / pickers
     },
